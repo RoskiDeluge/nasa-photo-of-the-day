@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import PhotoCard from "./PhotoCard";
-// import { directive } from "@babel/types";
 
 export default function PhotoList() {
   const [photo, setPhoto] = useState([]);
@@ -20,7 +19,7 @@ export default function PhotoList() {
 
   return (
     <div className="photo">
-      return <PhotoCard photoURL={photo.url} photoTitle={photo.title} photoDate={photo.date} photoDescription={photo.explanation} />;
+      <PhotoCard photoURL={photo.url} photoTitle={photo.title} photoDate={photo.date} photoDescription={photo.explanation} />
     </div>
   ) 
 }
