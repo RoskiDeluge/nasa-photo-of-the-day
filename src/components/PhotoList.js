@@ -10,6 +10,7 @@ export default function PhotoList() {
     axios
       .get("https://api.nasa.gov/planetary/apod?api_key=YyVLpQ23d5kc02e1VfJmd8MKkVAvvHhsheijny7Y")
       .then(response => {
+        setPhoto(response.data);
         console.log(response);
       })
       .catch(error => console.log(error));
@@ -19,7 +20,7 @@ export default function PhotoList() {
 
   return (
     <div className="photo">
-
+      return <PhotoCard photoURL={photo.url} photoTitle={photo.title} photoDate={photo.date} photoDescription={photo.explanation} />;
     </div>
   ) 
 }

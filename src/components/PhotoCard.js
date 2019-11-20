@@ -1,11 +1,12 @@
 import React from "react";
 
-const PhotoCard = () => {
+const PhotoCard = props => {
   return (
     <div className="photo-list">
-      <h2>Photo Title</h2>
-      <p>Photo Date</p>
-      <p>Photo Description</p>
+      <img className="photo-style" alt="Nasa Photo of the Day" src={props.photoURL} />
+      <h2>{props.photoTitle}</h2>
+      <p>{props.photoDate}</p>
+      <p>{props.photoDescription}</p>
     </div>
   );
 };
