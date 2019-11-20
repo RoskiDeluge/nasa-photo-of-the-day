@@ -15,11 +15,11 @@ export default function PhotoList() {
       .catch(error => console.log(error));
   };
 
-  // useEffect(didUpdate, []);
+  useEffect(didUpdate, []);
 
-  // return (
-  //   <div className="photo">
+  return (
+    <div className="photo">
 
-  //   </div>
-  // )
+    </div>
+  ) 
 }
