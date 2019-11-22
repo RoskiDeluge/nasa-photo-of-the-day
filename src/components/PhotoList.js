@@ -19,7 +19,14 @@ export default function PhotoList() {
 
   return (
     <div className="photo">
-      <PhotoCard photoURL={photo.url} photoTitle={photo.title} photoDate={photo.date} photoDescription={photo.explanation} />
+      <PhotoCard 
+      photoURL={photo.url} 
+      photoTitle={photo.title} 
+      photoDate={photo.date} 
+      photoDescription={photo.explanation} 
+      photoCopyright={photo.copyright} 
+      />
+      <p>Made by RLD</p>
     </div>
   ) 
 }
