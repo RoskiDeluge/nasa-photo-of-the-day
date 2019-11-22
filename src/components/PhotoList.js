@@ -26,7 +26,6 @@ export default function PhotoList() {
       photoDescription={photo.explanation} 
       photoCopyright={photo.copyright} 
       />
-      <p>Made by RLD</p>
     </div>
   ) 
 }

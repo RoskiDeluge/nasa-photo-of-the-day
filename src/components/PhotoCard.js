@@ -20,7 +20,7 @@ const PicCopyright = styled.p`
 `
 
 const PicDate = styled.p`
-  font-size: .5rem;
+  font-size: 1rem;
 `
 
 const PicDescription = styled.p`
