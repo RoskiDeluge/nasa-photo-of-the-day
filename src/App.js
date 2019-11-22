@@ -21,7 +21,7 @@ function App() {
         NASA Photo of The Day
       </AppTitle>
       <PhotoList />
-      <AppFooter>Made by RLD</AppFooter>
+      <AppFooter>Made by RLD 🚀</AppFooter>
     </div>
   );
 }
