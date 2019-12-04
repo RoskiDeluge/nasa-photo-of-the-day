@@ -1,13 +1,27 @@
 import React from "react";
+import PhotoList from "./components/PhotoList";
 import "./App.css";
+import styled from "styled-components";
+
+const AppTitle = styled.h1`
+  margin-left: 10%;
+  font-family: 'Impact', sans-serif;
+  font-size: 3.5rem;
+  color: yellow;
+`
+
+const AppFooter = styled.p`
+  margin-left: 10%;
+`
 
 function App() {
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+      <AppTitle>
+        NASA Photo of The Day
+      </AppTitle>
+      <PhotoList />
+      <AppFooter>Made by RLD 🚀</AppFooter>
     </div>
   );
 }
