@@ -8,40 +8,54 @@ const PicCard = styled.div`
 
 const PicImg = styled.img`
   width: 100%;
-`
+`;
 const PicTitle = styled.h2`
-  font-family: 'Impact';
+  font-family: "Impact";
   font-size: 3rem;
-`
+`;
 
 const PicCopyright = styled.p`
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 2rem;
-`
+`;
 
 const PicDate = styled.p`
   font-size: 1rem;
-`
+`;
 
 const PicDescription = styled.p`
   font-size: 2.5rem;
-`
+`;
 
-const PhotoCard = props => {
+const PhotoCard = ({
+  photoURL,
+  photoMedia,
+  photoTitle,
+  photoCopyright,
+  photoDate,
+  photoDescription,
+}) => {
   return (
     <PicCard>
-      <PicImg src={props.photoURL} />
-      <PicTitle>{props.photoTitle}</PicTitle>
-      <PicCopyright>By: {props.photoCopyright}</PicCopyright>
-      <PicDate>{props.photoDate}</PicDate>
-      <PicDescription>{props.photoDescription}</PicDescription>
+      {photoMedia === "image" ? (
+        <PicImg src={photoURL} alt={photoTitle} />
+      ) : (
+        <iframe
+          title="space-video"
+          src={photoURL}
+          frameBorder="0"
+          gesture="media"
+          allow="encrypted-media"
+          allowFullScreen
+        />
+      )}
+
+      <PicTitle>{photoTitle}</PicTitle>
+      <PicCopyright>By: {photoCopyright}</PicCopyright>
+      <PicDate>{photoDate}</PicDate>
+      <PicDescription>{photoDescription}</PicDescription>
     </PicCard>
   );
 };
 
 export default PhotoCard;
-
-
-
-
-
