@@ -9,6 +9,11 @@ const PicCard = styled.div`
 const PicImg = styled.img`
   width: 100%;
 `;
+
+const Video = styled.iframe`
+  width: 100%;
+`;
+
 const PicTitle = styled.h2`
   font-family: "Impact";
   font-size: 3rem;
@@ -40,7 +45,7 @@ const PhotoCard = ({
       {photoMedia === "image" ? (
         <PicImg src={photoURL} alt={photoTitle} />
       ) : (
-        <iframe
+        <Video
           title="space-video"
           src={photoURL}
           frameBorder="0"
