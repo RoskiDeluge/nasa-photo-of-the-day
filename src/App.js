@@ -6,7 +6,7 @@ import styled from "styled-components";
 
 const AppTitle = styled.h1`
   margin-left: 10%;
-  font-family: "Impact", sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 3.5rem;
   color: yellow;
 `;
