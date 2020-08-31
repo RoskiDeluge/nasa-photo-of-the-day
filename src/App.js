@@ -21,7 +21,6 @@ function App() {
       <div className="App">
         <AppTitle>NASA Photo of The Day</AppTitle>
         <Route component={PhotoList} path="/" exact />
-        {/* <PhotoList /> */}
         <AppFooter>
           Made by RD{" "}
           <span role="img" aria-label="Rocket Ship">

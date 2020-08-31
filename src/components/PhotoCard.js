@@ -11,7 +11,9 @@ const PicImg = styled.img`
 `;
 
 const Video = styled.iframe`
+  position: relative;
   width: 100%;
+  height: 100vh;
 `;
 
 const PicTitle = styled.h2`
