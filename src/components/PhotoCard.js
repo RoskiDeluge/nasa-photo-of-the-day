@@ -18,12 +18,24 @@ const Video = styled.iframe`
 
 const PicTitle = styled.h2`
   font-family: "Arial", sans-serif;
-  font-size: 3rem;
+  @media (min-width: 720px) {
+    font-size: 3rem;
+  }
+  ,
+  @media (min-width: 320px) {
+    font-size: 2rem;
+  }
 `;
 
 const PicCopyright = styled.p`
   font-family: "Arial", sans-serif;
-  font-size: 2rem;
+  @media (min-width: 720px) {
+    font-size: 2rem;
+  }
+  ,
+  @media (min-width: 320px) {
+    font-size: 1rem;
+  }
 `;
 
 const PicDate = styled.p`
@@ -31,7 +43,13 @@ const PicDate = styled.p`
 `;
 
 const PicDescription = styled.p`
-  font-size: 2.5rem;
+  @media (min-width: 720px) {
+    font-size: 2rem;
+  }
+  ,
+  @media (min-width: 320px) {
+    font-size: 1rem;
+  }
 `;
 
 const PhotoCard = ({

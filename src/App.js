@@ -7,8 +7,14 @@ import styled from "styled-components";
 const AppTitle = styled.h1`
   margin-left: 10%;
   font-family: "Arial", sans-serif;
-  font-size: 3.5rem;
   color: yellow;
+  @media (min-width: 720px) {
+    font-size: 3.5rem;
+  }
+  ,
+  @media (min-width: 320px) {
+    font-size: 1rem;
+  }
 `;
 
 const AppFooter = styled.p`
