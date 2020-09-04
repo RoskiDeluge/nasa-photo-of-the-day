@@ -26,9 +26,9 @@ export default function PhotoList() {
     <div className="photo">
       {noPhoto ? (
         <>
-          <p>{error}</p>
           <p>
-            Please come back later. The NASA photo of the day is not ready yet.
+            {error}: Please come back later. The NASA photo of the day is not
+            ready yet.
           </p>
         </>
       ) : (
