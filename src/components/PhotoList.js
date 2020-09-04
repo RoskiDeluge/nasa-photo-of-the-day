@@ -13,7 +13,7 @@ export default function PhotoList() {
       .get(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}`)
       .then((response) => {
         setPhoto(response.data);
-        // console.log("rd: didUpdate res:", response);
+        console.log("rd: didUpdate res:", response);
       })
       .catch((error) => setnoPhoto(error.message));
   };
@@ -24,7 +24,7 @@ export default function PhotoList() {
 
   return (
     <div className="photo">
-      {noPhoto ? (
+      {!photo ? (
         <>
           <p>
             {error}: Please come back later. The NASA photo of the day is not
