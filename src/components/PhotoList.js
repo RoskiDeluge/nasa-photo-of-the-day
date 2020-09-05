@@ -13,11 +13,11 @@ export default function PhotoList() {
       .get(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}`)
       .then((response) => {
         setPhoto(response.data);
-        console.log("rd: didUpdate res:", response);
+        // console.log("rd: didUpdate res:", response);
       })
       .catch((error) => {
         setnoPhotoError(error.message);
-        console.log("rd: didUpdate error: ", error);
+        // console.log("rd: didUpdate error: ", error);
       });
   };
 
