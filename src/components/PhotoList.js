@@ -6,7 +6,7 @@ const apiKey = process.env.REACT_APP_NASA_KEY;
 
 export default function PhotoList() {
   const [photo, setPhoto] = useState([]);
-  const [noPhoto, setnoPhoto] = useState({});
+  const [noPhotoError, setnoPhotoError] = useState({});
 
   const didUpdate = () => {
     axios
@@ -15,16 +15,19 @@ export default function PhotoList() {
         setPhoto(response.data);
         console.log("rd: didUpdate res:", response);
       })
-      .catch((error) => setnoPhoto(error.message));
+      .catch((error) => {
+        setnoPhotoError(error.message);
+        console.log("rd: didUpdate error: ", error);
+      });
   };
 
   useEffect(didUpdate, []);
 
-  let error = JSON.stringify(noPhoto);
+  let error = JSON.stringify(noPhotoError);
 
   return (
     <div className="photo">
-      {!photo ? (
+      {noPhotoError ? (
         <>
           <p>
             {error}: Please come back later. The NASA photo of the day is not
