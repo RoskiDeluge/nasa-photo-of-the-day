@@ -52,6 +52,16 @@ const PicDescription = styled.p`
   }
 `;
 
+const PicError = styled.p`
+  @media (min-width: 720px) {
+    font-size: 2rem;
+  }
+  ,
+  @media (min-width: 320px) {
+    font-size: 1rem;
+  }
+`;
+
 const PhotoCard = ({
   photoURL,
   photoMedia,
@@ -59,9 +69,11 @@ const PhotoCard = ({
   photoCopyright,
   photoDate,
   photoDescription,
+  photoError,
 }) => {
   return (
     <PicCard>
+      <PicError>{photoError}</PicError>
       {photoMedia === "image" ? (
         <PicImg src={photoURL} alt={photoTitle} />
       ) : (
