@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import PhotoList from "./components/PhotoList";
-import "./App.css";
 import styled from "styled-components";
 
 const AppTitle = styled.h1`
   margin-left: 10%;
-  font-family: "Arial", sans-serif;
+  font-family: cooper-black-std, serif;
+  font-style: italic;
   color: yellow;
   @media (min-width: 720px) {
     font-size: 3.5rem;

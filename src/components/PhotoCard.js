@@ -17,7 +17,7 @@ const Video = styled.iframe`
 `;
 
 const PicTitle = styled.h2`
-  font-family: "Arial", sans-serif;
+  font-family: cooper-black-std, serif;
   @media (min-width: 720px) {
     font-size: 3rem;
   }
