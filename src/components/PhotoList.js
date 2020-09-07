@@ -6,18 +6,20 @@ const apiKey = process.env.REACT_APP_NASA_KEY;
 
 export default function PhotoList() {
   const [photo, setPhoto] = useState([]);
-  const [noPhotoError, setnoPhotoError] = useState([]);
+  const [noPhotoError, setnoPhotoError] = useState();
 
   const didUpdate = () => {
     axios
       .get(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}`)
       .then((response) => {
         setPhoto(response.data);
-        console.log("rd: didUpdate res:", response);
+        // console.log("rd: didUpdate res:", response);
       })
       .catch((error) => {
-        setnoPhotoError(error);
-        console.log("rd: didUpdate error: ", error);
+        setnoPhotoError(
+          `${error}: NASA's photo of the day is not ready yet, please come back later.`
+        );
+        // console.log("rd: didUpdate error: ", error);
       });
   };
 
@@ -34,7 +36,7 @@ export default function PhotoList() {
         photoDate={photo.date}
         photoDescription={photo.explanation}
         photoCopyright={photo.copyright}
-        photoError={noPhotoError.message}
+        photoError={noPhotoError}
       />
     </div>
   );
