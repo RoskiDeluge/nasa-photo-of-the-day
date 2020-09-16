@@ -28,6 +28,9 @@ function App() {
         <AppTitle>NASA Photo of The Day</AppTitle>
         <Route component={PhotoList} path="/" exact />
         <AppFooter>
+          <div>
+          <iframe src="https://open.spotify.com/embed/playlist/0OEuV3ldY4Xdo1sfZ0eK61" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </div>
           Made by RD{" "}
           <span role="img" aria-label="Rocket Ship">
             🚀
