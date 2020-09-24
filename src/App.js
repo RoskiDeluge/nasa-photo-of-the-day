@@ -29,7 +29,21 @@ function App() {
         <Route component={PhotoList} path="/" exact />
         <AppFooter>
           <div>
-          <iframe src="https://open.spotify.com/embed/playlist/0OEuV3ldY4Xdo1sfZ0eK61" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe
+              width="100%"
+              height="170"
+              scrolling="no"
+              frameborder="no"
+              src="https://blend.io/embed/55237d950ff338471f004faa"
+            ></iframe>
+            <iframe
+              src="https://open.spotify.com/embed/playlist/0OEuV3ldY4Xdo1sfZ0eK61"
+              width="300"
+              height="380"
+              frameborder="0"
+              allowtransparency="true"
+              allow="encrypted-media"
+            ></iframe>
           </div>
           Made by RD{" "}
           <span role="img" aria-label="Rocket Ship">
