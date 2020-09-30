@@ -19,6 +19,20 @@ const AppTitle = styled.h1`
 
 const AppFooter = styled.p`
   margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+`;
+
+const Spotify = styled.iframe`
+  margin-bottom: 1rem;
+  border: none;
+`;
+
+const Signature = styled.div`
+  font-family: cooper-black-std, serif;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
 `;
 
 function App() {
@@ -29,13 +43,13 @@ function App() {
         <Route component={PhotoList} path="/" exact />
         <AppFooter>
           <div>
-            <iframe
+            <Spotify
               width="80%"
               height="170"
               scrolling="no"
               frameborder="no"
               src="https://blend.io/embed/55237d950ff338471f004faa"
-            ></iframe>
+            ></Spotify>
             <iframe
               src="https://open.spotify.com/embed/playlist/0OEuV3ldY4Xdo1sfZ0eK61"
               width="300"
@@ -45,10 +59,12 @@ function App() {
               allow="encrypted-media"
             ></iframe>
           </div>
-          Made by RD{" "}
-          <span role="img" aria-label="Rocket Ship">
-            🚀
-          </span>
+          <Signature>
+            Made by RD{"  "}
+            <span role="img" aria-label="Rocket Ship">
+              🚀
+            </span>
+          </Signature>
         </AppFooter>
       </div>
     </BrowserRouter>
