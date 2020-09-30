@@ -4,7 +4,8 @@ import PhotoList from "./components/PhotoList";
 import styled from "styled-components";
 
 const AppTitle = styled.h1`
-  margin-left: 10%;
+  display: flex;
+  justify-content: center;
   font-family: cooper-black-std, serif;
   font-style: italic;
   color: yellow;
@@ -30,6 +31,7 @@ const Spotify = styled.iframe`
 
 const Signature = styled.div`
   font-family: cooper-black-std, serif;
+  color: lightblue;
   margin-top: 1rem;
   display: flex;
   justify-content: center;
