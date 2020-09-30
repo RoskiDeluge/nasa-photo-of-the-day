@@ -30,7 +30,7 @@ function App() {
         <AppFooter>
           <div>
             <iframe
-              width="100%"
+              width="80%"
               height="170"
               scrolling="no"
               frameborder="no"
