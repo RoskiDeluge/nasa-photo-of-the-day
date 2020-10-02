@@ -24,6 +24,11 @@ const AppFooter = styled.p`
   flex-direction: column;
 `;
 
+const MusicContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
 const Spotify = styled.iframe`
   margin-bottom: 1rem;
   border: none;
@@ -44,16 +49,16 @@ function App() {
         <AppTitle>NASA Photo of The Day</AppTitle>
         <Route component={PhotoList} path="/" exact />
         <AppFooter>
-          <div>
-            <iframe
+          <MusicContainer>
+            <Spotify
               src="https://open.spotify.com/embed/playlist/0OEuV3ldY4Xdo1sfZ0eK61"
               width="300"
               height="380"
               frameborder="0"
               allowtransparency="true"
               allow="encrypted-media"
-            ></iframe>
-          </div>
+            ></Spotify>
+          </MusicContainer>
           <Signature>
             Made by RD{"  "}
             <span role="img" aria-label="Rocket Ship">
