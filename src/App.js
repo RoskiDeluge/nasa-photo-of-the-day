@@ -42,6 +42,10 @@ const Signature = styled.div`
   justify-content: center;
 `;
 
+const RDlink = styled.span`
+  margin-left: 0.5rem;
+`;
+
 function App() {
   return (
     <BrowserRouter>
@@ -60,7 +64,11 @@ function App() {
             ></Spotify>
           </MusicContainer>
           <Signature>
-            Made by RD{"  "}
+            Made by
+            <RDlink>
+              <a href="https://rldelgado.com/">RD</a>
+            </RDlink>
+            {"  "}
             <span role="img" aria-label="Rocket Ship">
               🚀
             </span>
