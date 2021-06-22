@@ -66,7 +66,8 @@ function App() {
           <Signature>
             Made by
             <RDlink>
-              <a href="https://rldelgado.com/">RD</a>
+              <a href="https://rldelgado.com/">RD</a> Data from{" "}
+              <a href="https://api.nasa.gov/">NASA API</a>
             </RDlink>
             {"  "}
             <span role="img" aria-label="Rocket Ship">
