@@ -50,7 +50,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <AppTitle>South First Media</AppTitle>
+        <AppTitle>NASA Photo of the Day</AppTitle>
         <Route component={PhotoList} path="/" exact />
         <AppFooter>
           <MusicContainer>
