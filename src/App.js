@@ -66,7 +66,7 @@ function App() {
           <Signature>
             Made by
             <RDlink>
-              Made by Delgado Media <br />
+              Delgado Media <br />
               Data from <a href="https://api.nasa.gov/">NASA API</a>
             </RDlink>
             {"  "}
