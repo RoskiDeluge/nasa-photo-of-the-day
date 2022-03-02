@@ -1,7 +1,7 @@
-import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
-import PhotoList from "./components/PhotoList";
-import styled from "styled-components";
+import React from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
+import PhotoList from './components/PhotoList';
+import styled from 'styled-components';
 
 const AppTitle = styled.h1`
   display: flex;
@@ -43,7 +43,7 @@ const Signature = styled.div`
 `;
 
 const RDlink = styled.span`
-  margin-left: 0.5rem;
+  margin: auto;
 `;
 
 function App() {
@@ -64,15 +64,15 @@ function App() {
             ></Spotify>
           </MusicContainer>
           <Signature>
-            Made by
             <RDlink>
-              Delgado Media <br />
-              Data from <a href="https://api.nasa.gov/">NASA API</a>
+              <div>Made by Delgado Media</div>
+              <div>
+                Data from <a href="https://api.nasa.gov/">NASA API</a>
+                <span role="img" aria-label="Rocket Ship">
+                  🚀
+                </span>
+              </div>
             </RDlink>
-            {"  "}
-            <span role="img" aria-label="Rocket Ship">
-              🚀
-            </span>
           </Signature>
         </AppFooter>
       </div>
