@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import PhotoList from './components/PhotoList';
 import styled from 'styled-components';
+import WebPlayground from './components/WebPlayground';
 
 const AppTitle = styled.h1`
   display: flex;
@@ -52,6 +53,7 @@ function App() {
       <div className="App">
         <AppTitle>NASA Photo of the Day</AppTitle>
         <Route component={PhotoList} path="/" exact />
+        <Route component={WebPlayground} path="/webplayground" exact />
         <AppFooter>
           <MusicContainer>
             <Spotify
