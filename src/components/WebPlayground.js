@@ -9,7 +9,9 @@ const IframeBox = styled.iframe`
 `;
 
 const WebPlayground = () => {
-  return <IframeBox src="https://stackblitz.com/edit/web-platform-rw6def?ctl=1&devtoolsheight=33&embed=1&file=index.html" />;
+  return (
+    <IframeBox src="https://codesandbox.io/embed/web-playground-gb19cm?fontsize=14&hidenavigation=1&theme=dark" />
+  );
 };
 
 export default WebPlayground;
