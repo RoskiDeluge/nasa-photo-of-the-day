@@ -10,7 +10,7 @@ const IframeBox = styled.iframe`
 
 const WebPlayground = () => {
   return (
-    <IframeBox src="https://stackblitz.com/edit/web-platform-rw6def?devtoolsheight=33&embed=1&file=index.html" />
+    <IframeBox src="https://codesandbox.io/embed/web-playground-3k5zwg?fontsize=14&hidenavigation=1&theme=dark" />
   );
 };
 
