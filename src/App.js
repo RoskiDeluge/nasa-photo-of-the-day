@@ -53,7 +53,7 @@ function App() {
       <div className="App">
         <AppTitle>NASA Photo of the Day</AppTitle>
         <Route component={PhotoList} path="/" exact />
-        <Route component={WebPlayground} path="/webplayground" exact />
+        {/* <Route component={WebPlayground} path="/webplayground" exact /> */}
         <AppFooter>
           <MusicContainer>
             <Spotify
