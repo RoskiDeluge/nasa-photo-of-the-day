@@ -68,8 +68,11 @@ function App() {
           <Signature>
             <RDlink>
               <div>
-                Made by <a href="https://github.com/RoskiDeluge">RD</a> with
-                data from <a href="https://api.nasa.gov/">NASA API</a>
+                Made by{' '}
+                <a href="https://github.com/RoskiDeluge/nasa-photo-of-the-day">
+                  RD
+                </a>{' '}
+                with data from <a href="https://api.nasa.gov/">NASA API</a>
                 <span role="img" aria-label="Rocket Ship">
                   🚀
                 </span>
