@@ -1,4 +1,5 @@
 import React from 'react';
+import { GoMarkGithub } from 'react-icons/go';
 import { BrowserRouter, Route } from 'react-router-dom';
 import PhotoList from './components/PhotoList';
 import styled from 'styled-components';
@@ -71,6 +72,7 @@ function App() {
                 Made by{' '}
                 <a href="https://github.com/RoskiDeluge/nasa-photo-of-the-day">
                   RD
+                  <GoMarkGithub />
                 </a>{' '}
                 with data from <a href="https://api.nasa.gov/">NASA API</a>
                 <span role="img" aria-label="Rocket Ship">
