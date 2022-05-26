@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import PhotoList from './components/PhotoList';
 import styled from 'styled-components';
-import WebPlayground from './components/WebPlayground';
+// import WebPlayground from './components/WebPlayground';
 
 const AppTitle = styled.h1`
   display: flex;
@@ -67,9 +67,9 @@ function App() {
           </MusicContainer>
           <Signature>
             <RDlink>
-              <div>Made by Delgado Media</div>
               <div>
-                Data from <a href="https://api.nasa.gov/">NASA API</a>
+                Made by <a href="https://github.com/RoskiDeluge">RD</a> with
+                data from <a href="https://api.nasa.gov/">NASA API</a>
                 <span role="img" aria-label="Rocket Ship">
                   🚀
                 </span>
