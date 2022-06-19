@@ -48,6 +48,10 @@ const RDlink = styled.span`
   margin: auto;
 `;
 
+const GHicon = styled.a`
+  color: white;
+`;
+
 function App() {
   return (
     <BrowserRouter>
@@ -69,15 +73,9 @@ function App() {
           <Signature>
             <RDlink>
               <div>
-                Made by{' '}
-                <a href="https://github.com/RoskiDeluge/nasa-photo-of-the-day">
-                  RD
+                <GHicon href="https://github.com/RoskiDeluge/nasa-photo-of-the-day">
                   <GoMarkGithub />
-                </a>{' '}
-                with data from <a href="https://api.nasa.gov/">NASA API</a>
-                <span role="img" aria-label="Rocket Ship">
-                  🚀
-                </span>
+                </GHicon>
               </div>
             </RDlink>
           </Signature>
