@@ -3,7 +3,6 @@ import { GoMarkGithub } from 'react-icons/go';
 import { BrowserRouter, Route } from 'react-router-dom';
 import PhotoList from './components/PhotoList';
 import styled from 'styled-components';
-// import WebPlayground from './components/WebPlayground';
 
 const AppTitle = styled.h1`
   display: flex;
@@ -20,8 +19,7 @@ const AppTitle = styled.h1`
   }
 `;
 
-const AppFooter = styled.p`
-  margin-left: 10%;
+const AppFooter = styled.div`
   display: flex;
   flex-direction: column;
 `;
