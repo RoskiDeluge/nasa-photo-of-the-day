@@ -4,24 +4,16 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import PhotoList from './components/PhotoList';
 import styled from 'styled-components';
 
-const AppTitle = styled.h1`
+const AppTitle = styled.p`
   display: flex;
   justify-content: center;
-  font-family: cooper-black-std, serif;
-  font-style: italic;
-  color: yellow;
-  @media (min-width: 720px) {
-    font-size: 3.5rem;
-  }
   ,
-  @media (min-width: 320px) {
-    font-size: 1rem;
-  }
 `;
 
 const AppFooter = styled.div`
   display: flex;
   flex-direction: column;
+  margin-bottom: 1rem;
 `;
 
 const MusicContainer = styled.div`
@@ -54,7 +46,6 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <AppTitle>NASA Photo of the Day</AppTitle>
         <Route component={PhotoList} path="/" exact />
         {/* <Route component={WebPlayground} path="/webplayground" exact /> */}
         <AppFooter>
@@ -68,6 +59,7 @@ function App() {
               allow="encrypted-media"
             ></Spotify>
           </MusicContainer>
+          <AppTitle>NASA Photo of the Day</AppTitle>
           <Signature>
             <RDlink>
               <div>
