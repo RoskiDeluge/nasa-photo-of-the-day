@@ -1,6 +1,6 @@
 # NASA Photo of the Day
 
-React learning project. Deployed: https://nasa-photo-of-the-day-taupe-ten.vercel.app/
+React learning project. 
 
 ## Prompt
 
